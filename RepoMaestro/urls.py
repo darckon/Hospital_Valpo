@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from administracion import views as administracion_views
+from agenda import views as agenda_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
+    #Administracion
+    url(r'^administracion/', administracion_views.dashboard, name='administracion'),
+
+    #SubModulos
+    url(r'^agenda/$', agenda_views.dashboard, name='agenda-web'),
+
 ]
