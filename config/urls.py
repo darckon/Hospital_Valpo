@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from administracion import views as administracion_views
 #from agenda import views as agenda_views
-
+#from bodega import views as bodega_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
@@ -26,5 +26,5 @@ urlpatterns = [
 
     #SubModulos
     #url(r'^agenda/$', agenda_views.dashboard, name='agenda-web'),
-
+    #url(r'^bodega/$', bodega_views.dashboard, name='bodega-web'),
 ]
